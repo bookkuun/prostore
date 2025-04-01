@@ -1,8 +1,16 @@
-const delay = (ms: number) => new Promise((resolve) => setTimeout(resolve, ms));
+import ProdutcList from "@/components/shared/product/product-list";
+import sampleData from "@/db/sample-data";
 
 const Homepage = async () => {
-  await delay(1000);
-  return <>Prostore</>;
+  return (
+    <>
+      <ProdutcList
+        data={sampleData.products}
+        title="Newest Arribals"
+        limit={4}
+      />
+    </>
+  );
 };
 
 export default Homepage;
