@@ -4,6 +4,7 @@ import Link from "next/link";
 import ProductPrice from "./product-price";
 
 const ProdutcCard = ({ product }: { product: any }) => {
+  console.log(product);
   return (
     <Card className="w-full max-2-sm">
       <CardHeader className="p-0 items-center">
@@ -24,7 +25,7 @@ const ProdutcCard = ({ product }: { product: any }) => {
         <div className="flex-between gap-4">
           <p>{product.rating} Stars</p>
           {product.stock > 0 ? (
-            <ProductPrice value={product.price} />
+            <ProductPrice value={Number(product.price)} />
           ) : (
             <p className="text-destructive">Oust Of Stock</p>
           )}
