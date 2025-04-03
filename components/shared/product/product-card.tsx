@@ -2,8 +2,9 @@ import { Card, CardContent, CardHeader } from "@/components/ui/card";
 import Image from "next/image";
 import Link from "next/link";
 import ProductPrice from "./product-price";
+import { Product } from "@/types";
 
-const ProdutcCard = ({ product }: { product: any }) => {
+const ProdutcCard = ({ product }: { product: Product }) => {
   console.log(product);
   return (
     <Card className="w-full max-2-sm">
