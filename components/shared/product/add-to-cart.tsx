@@ -1,7 +1,7 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
-import { PlusIcon } from "lucide-react";
+// import { PlusIcon } from "lucide-react";
 import { toast } from "sonner";
 import { CartItem } from "@/types";
 import { addItemToCart } from "@/lib/actions/cart.actions";
